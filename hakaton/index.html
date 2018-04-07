@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <title>
@@ -8,15 +9,59 @@
   <style>
     body {
       margin: 0;
-      overflow: hidden;
     }
   </style>
 </head>
 
 <body>
+  <div id='html-container'>
+    <div id='container'>
 
-  <div id='container'>
-
+    </div>
+    <aside>
+    <div id="modal">
+        <a href="#openModal">Open Modal</a>
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Modal Box</h2>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+          </div>
+        </div>
+      </div>
+      <div class="portrait">
+        <div id="portrait-wrapper" class="player-portrait">
+          <img id="portrait" />
+        </div>
+        <div id="fabricTable" class="hidden">
+          <table>
+            
+          </table>
+        </div>
+      </div>
+      <div class="resources">
+        <div class="header">Resources</div>
+        <div class="group">
+          <img id="cry"></img>
+          <div>Minerals:</div>
+          <span id="mineralSpan"></span>
+        </div>
+        <div class="group">
+          <img id="oo2"></img>
+          <div>Oxygen:</div>
+          <span id="oxygenSpan"></span>
+        </div>
+        <div class="group nomargin">
+          <img id="mol"></img>
+          <div>Energy:</div>
+          <span id="energySpan"></span>
+        </div>
+      </div>
+      <button id='makeTurnButton' class="makeTurnButton">
+        Make turn
+      </button>
+    </aside>
   </div>
 
 <script type="text/javascript" src="main_bundle.js"></script></body>
